@@ -1,0 +1,49 @@
+# Re-engineering inside the lines: How to innovate within a legacy stack
+Ines Sheppard, Vice President, Goldman
+
+Come learn about how to effectively re-engineer your technology stack. Not only will you get to work on frameworks you enjoy and help retain engineers, you'll also help reduce cost and risk associated with using older technologies.
+
+### Notes
+* innovation is critical for products to keep up with demand
+* Problem - legacy stack left, never fully decommissioned, build parallel stack
+    * End up supporting 2 systems
+* Drivers for innovation
+    * Business drivers
+        * Is my technical stack no longer meeting functional requirements
+        * Will we get commercial gains
+        * Is it difficult to source and retain talent because of tech stack
+    * Technical drivers
+        * Security vulnerabilities - need to upgrade
+        * End of life components you still maintain
+        * High cost of support
+* Measuring impact
+    * How you measure how your system is doing
+    * Once you are done, how much did you improve
+        * Processing time
+        * Service up time
+        * Time spent on support - developer happiness
+        * Cost of maintenance and ease of deployment
+        * User satisfaction
+* Strategies for innovation and case studies
+    * Rehost (low effort)
+        * Use improvements in hardware - see performance gains
+        * Move applications to new deployment - double compute 
+        * Use cloud solutions - reduce cost of maintaining physical machines
+    * Refactor
+        * Upgrade software version - 3rd party library
+        * Upgrade version of java
+        * Remove duplicate code, cleanup code - runtime is small
+        * Pin point pains points - focus on it
+        * Identify least performant components
+    * Rearchitect / rebuild
+        * Break up monolithic applications into smaller micro services
+            * Easier to manager
+            * Separate functionality
+            * Allow you to easily manage components - manage individually
+            * Use API to incrementally replace specific functions
+    * Replace (high effort)
+            * Use messaging bus to decouple components and replace specific functions
+                * Eg Kafka, activeMQ
+            * Replace individual and separate components on end of life components like database
+                * Replace database, upgrade version of database, go from traditional to relational DB
+
